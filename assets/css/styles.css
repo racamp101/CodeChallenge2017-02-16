@@ -1,0 +1,17 @@
+html, body{width:100%; height: 100%; padding:0px; margin:0px; }
+body .intro { position:relative; width:100%; height:100%; }
+body .title { position:relative;  padding:10px; margin:0px; background-color:#dddddd; text-align:center;}
+body .footer { position:absolute; width:100%; top:auto; bottom:0px; }
+
+.button { background-color: #0000ff; border: none; color: white; text-align: center; text-decoration: none; display: inline-block;}
+.button.button-lg {padding: 15px 35px;font-size: 18px;}
+
+.col-1 { width:16.5%; display:inline-block; }
+.col-2 { width:33%; display:inline-block; }
+.col-5 { width:83%; display:inline-block; }
+.col-6 { width:100%; display:inline-block; }
+
+.form-stacked label { display:block; width:100%; padding:5px; }
+.form-stacked input { display:block; width:100%; padding:5px; }
+
+.displayText input { font-size:18px; text-align:center; width:100%; border:none; background:none; margin-top:50px; }
