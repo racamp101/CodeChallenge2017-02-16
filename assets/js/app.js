@@ -4,7 +4,7 @@
 // init ---------------------------------------------
 (function (w) {
     w.app = {
-        settings: { log: true },
+        settings: { log: true }, //set log to false to remove all console logging (largest memory leak issue in web dev)
         controllers: {},
         loadedControllers: {},
         log: function (title, message) {
@@ -60,7 +60,6 @@
         self.text = "Enter values above.";
 
         function calcTriangle(numbers) {
-            console.log(numbers);
             if (numbers.length !== 3 || !numbers[0] || !numbers[1] | !numbers[2]) {
                 app.log("cant calculate triangle");
                 return;
@@ -70,7 +69,7 @@
             var sideOnelargest = Math.max.apply(null, numbers);
              numbers.splice(numbers.indexOf(String(sideOnelargest)), 1);
 
-             console.log(numbers);
+            
 
             var side2 = Number(numbers[0]);
             var side3 = Number(numbers[1]);
